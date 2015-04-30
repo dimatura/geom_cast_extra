@@ -24,9 +24,10 @@
 #include <pcl/point_types.h>
 #include <opencv2/core/core.hpp>
 
-#include <geom_cast/point_cast.h>
+#include <geom_cast/point_cast.hpp>
 
-namespace ca { namespace geom_cast {
+namespace ca {
+namespace detail {
 
 // pcl get
 template<>
@@ -132,7 +133,8 @@ struct xy_member_set<pcl::PointXY> : public boost::true_type { };
 template<>
 struct xy_member_get<pcl::PointXY> : public boost::true_type { };
 
-} /* geom_cast_extra */
+}
+
 } /* ca */
 
 #endif
