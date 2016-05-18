@@ -1,3 +1,7 @@
 # geom_cast_extra
 
-fuckfuckfuck
+author: Daniel Maturana (dimatura@cmu.edu)
+
+This is a companion package to `geom_cast`. It adds extra conversions to/from PCL and OpenCV data types.
+
+See `geom_cast` for more information.
