@@ -1,8 +1,11 @@
 <?xml version="1.0"?>
 <package>
   <name>geom_cast_extra</name>
-  <version>0.0.0</version>
-  <description>shitfuckshit</description>
+  <version>0.0.1</version>
+  <description>
+      This is a companion package to `geom_cast`. It adds extra conversions
+      to/from PCL and OpenCV data types.
+  </description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <!-- Example:  -->
@@ -11,7 +14,7 @@
   <!-- One license tag required, multiple allowed, one license per tag -->
   <!-- Commonly used license strings: -->
   <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
-  <license>Copyright Carnegie Mellon University 2015</license>
+  <license>BSD</license>
 
   <!-- Url tags are optional, but mutiple are allowed, one per tag -->
   <!-- Optional attribute type can be: website, bugtracker, or repository -->
