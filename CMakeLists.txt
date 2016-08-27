@@ -1,9 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(geom_cast_extra)
 
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   cmake_modules
   roscpp
@@ -12,14 +9,14 @@ find_package(catkin REQUIRED COMPONENTS
 
 find_package(Boost REQUIRED)
 find_package(Eigen REQUIRED)
-find_package(OpenCV)
-find_package(PCL)
+find_package(OpenCV REQUIRED)
+find_package(PCL REQUIRED)
 
 #catkin_python_setup()
 
 catkin_package(
   INCLUDE_DIRS include
-  LIBRARIES 
+  LIBRARIES
   CATKIN_DEPENDS roscpp geom_cast
   DEPENDS Eigen Boost OpenCV PCL
 )
@@ -37,12 +34,3 @@ include_directories(
   include
 )
 
-#include_directories(
-#  include
-#  ${catkin_INCLUDE_DIRS}
-#)
-
-#target_link_libraries(${PY_PROJECT_NAME}
-#    ${catkin_LIBRARIES}
-#    ${Boost_LIBRARIES}
-#)
